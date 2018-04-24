@@ -29,7 +29,7 @@ theta = [0.93931892944579276, -1.0035757423865808]
 kmfs = (km - min(data['km'])) / (max(data['km']) - min(data['km']))
 resfs = theta[0] + (theta[1] * kmfs)
 if resfs == 0:
-	print("The car price is 0.0 euro")
+	print("The car price is 0 euro")
 else:
 	res = (resfs * (max(data['price']) - min(data['price']))) + min(data['price'])
 	print("The car price is", int(res),"euros")
