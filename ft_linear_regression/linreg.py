@@ -32,4 +32,4 @@ if resfs == 0:
 	print("The car price is 0.0 euro")
 else:
 	res = (resfs * (max(data['price']) - min(data['price']))) + min(data['price'])
-	print("The car price is", res,"euros")
+	print("The car price is", int(res),"euros")
